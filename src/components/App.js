@@ -35,7 +35,7 @@ export class App extends Component {
     const feedbackOptions = ['Good', 'Neutral', 'Bad'];
     return (
       <div>
-        <Section title={'Please leave feedback'}>
+        <Section title="Please leave feedback">
           <FeedbackOptions
             options={feedbackOptions}
             onLeaveFeedback={this.updateFeedback}
@@ -52,7 +52,7 @@ export class App extends Component {
             ></Statistics>
           </Section>
         ) : (
-          <Notification message={'There is no feedback'} />
+          <Notification message="There is no feedback" />
         )}
         <GlobalStyle />
       </div>
